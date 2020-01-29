@@ -1,0 +1,313 @@
+body
+{
+    margin: 0;
+    padding: 0;
+	background-color:#fefefe;
+}
+.img
+{
+    border-radius: 50%;   
+}
+.section1
+{
+	background-color: #b1e19b;
+}
+.section2, .section3
+{
+	background-color: #ace2f8;
+}
+.section
+{
+    -webkit-border-top-right-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.review
+{
+	
+	background: #f2fbff;
+    font-size: 1.2rem;
+    line-height: 1.3;
+	border: 1px solid #c4cbcf;
+    position: relative;
+	font-size: 22px;
+	font-family: 'Alegreya', serif;
+	-webkit-box-shadow: 1px 1px 3px 0px rgba(191,191,191,0.48);
+	-moz-box-shadow: 1px 1px 3px 0px rgba(191,191,191,0.48);
+	box-shadow: 1px 1px 3px 0px rgba(191,191,191,0.48);
+}
+
+.revList
+{
+	width: 97%;
+}
+.newPost
+{
+	background: #f2f2f2;
+}
+.position
+{
+	font-size: 18px !important;
+	font-family: 'Alegreya', serif;
+}
+.blue
+{
+	color: #73b4d5;
+}
+.dblue
+{
+	color: #507e95;
+    top: 0.35em;
+    filter: blur(0.03em);
+}
+ .percent
+ {
+	border-left: 1px solid #e3e3e3;
+	margin-top: 20px;
+    margin-bottom: 20px;
+ }
+.dialogTip 
+{
+    position: absolute;
+    transform: rotate(180deg);
+    margin-left: 4vw;
+}
+.dialogTip::before 
+{
+    border-left: 12px solid transparent;
+    border-top: 12px solid #c4cbcf;
+    content: "";
+    position: absolute;
+    right: 5px;
+}
+.dialogTip::after 
+{
+    border-left: 11px solid transparent;
+    border-top: 11px solid #f2fbff;
+    top: -1px;
+    content: "";
+    position: absolute;
+    right: 6px;
+}
+.addReview
+{
+	width: 80%;
+}
+
+.z-index-2, .dialogTip
+{
+	z-index:2;
+}
+.padLeft
+{
+	padding-left: 2.4rem;
+}
+.description
+{
+    background-color: #fffbc8;
+    font-size: 20px;
+    width: fit-content;
+	white-space: nowrap;
+	font-family: 'Alegreya', serif;
+	color: #333;
+	border: 1px solid #c4cbcf;
+}
+.serviceText
+{
+	padding-right: 1.4em;
+	font-size: 20px !important;
+	color: #111;
+	font-family: 'Alegreya', serif;
+	white-space: nowrap;
+}
+.big
+{
+	font-size: 22px !important;
+	color: #111;
+	font-family: 'Alegreya', serif;
+}
+.bio
+{
+	margin-left: -4em;
+}
+.description p, .bio p
+{
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+.service
+{
+	width: 78%;
+	padding: 1rem;
+	border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+ } 
+ .total
+ {
+	width: 78%;
+	padding: 1rem;
+ }
+ .borders
+ {
+	border: 0.1em solid #404040 !important;
+	border-radius: 0.15rem !important;
+ }
+ .btn
+ {
+	border-radius: 1.4em !important;
+	background-color: #fdd639;
+	font-size: 23px !important;
+	font-family: 'Alegreya', serif;
+	color: #333333;
+	width: 60% !important;
+ }
+ .bold
+ {
+	 font-weight: bold !important;
+ }
+ .all
+ {
+	color: #005da1;
+ }
+ .all:hover
+ {
+	 text-decoration: underline;
+ }
+ .newPost
+{
+	margin-top: 3%;
+}
+@media only screen and (min-width: 400px) and (max-width: 550px) {
+	.addReview
+	{
+		width: 100%;
+	}
+		.big
+	{
+		font-size: 13px !important;
+	}
+	.position
+	{
+		font-size: 11px !important;
+	}
+	.newPost
+	{
+		margin-top: 1%;
+	}
+	.btn
+	{
+		font-size: 16px !important;
+	}
+	.description, .serviceText, .review
+	{
+		font-size: 12px !important;
+		padding-right: 0.7em;
+	}
+	.review
+	{
+		font-size: 12px !important;
+	}
+	.description p, .bio p
+	{
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.position
+	{
+		font-size: 10px;
+	}
+	.service, .total
+	{
+		width: 70%;
+	}
+}
+@media only screen and (min-width: 550px) and (max-width: 760px) {
+	.addReview
+	{
+		width: 90%;
+	}
+		.big
+	{
+		font-size: 18px !important;
+	}
+	.position
+	{
+		font-size: 14px !important;
+	}
+	.newPost
+	{
+		margin-top: 2%;
+	}
+	.description, .serviceText
+	{
+		font-size: 16px !important;
+		padding-right: 1em;
+	}
+	.btn
+	{
+		font-size: 20px !important;
+	}
+	.review
+	{
+		font-size: 16px !important;
+	}
+	.position
+	{
+		font-size: 10px;
+	}
+	.description p, .bio p
+	{
+		padding-top: 0.5%;
+		padding-bottom: 0.5%;
+	}
+	.service, .total
+	{
+		width: 75%;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.addReview
+	{
+		width: 100%;
+	}
+	.position
+	{
+		font-size: 10px !important;
+	}
+		.big
+	{
+		font-size: 12px !important;
+	}
+	.newPost
+	{
+		margin-top: 1%;
+	}
+	.btn
+	{
+		font-size: 14px !important;
+	}
+	.description, .serviceText
+	{
+		font-size: 10px !important;
+		padding-right: 0.4em;
+	}
+	.review
+	{
+		font-size: 10px !important;
+	}
+	.position
+	{
+		font-size: 9px;
+	}
+	.description p, .bio p
+	{
+		padding-top:0;
+		padding-bottom:0;
+	}
+	.service, .total
+	{
+		width: 70%;
+	}
+}
+

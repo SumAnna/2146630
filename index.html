@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Consult Blog</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" href="favicon.png" />
+		<link rel="apple-touch-icon" href="apple-touch-favicon.png"/>
+		<link href="main.css" rel="stylesheet"/>
+		<link href="bootstrap.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
+    </head>
+    <body>
+	<div class="container mt-4 p-0">
+        <div class="row pl-2 pr-2 mx-auto">
+            <div class="col-4 col-sm-4 col-md-4 my-auto z-index-2">
+                <img src="girl.jpg" class="img img-fluid float-left">
+            </div>
+			<div class="col-8 col-sm-9 col-md-8 my-auto bio">
+                <p class="font-weight-bold padLeft m-0 big">Вероника Ростова</p>
+				<p class="text-muted padLeft m-0 mb-1 position">Менеджер по продажам</p>
+				<div class="description padLeft pb-1 pt-1 rounded pr-3">
+						<p class="m-0">Подберу для Вас самые лучшие предложения.</p>
+						<p class="m-0">Мои услуги абсолютно бесплатны.</p>
+				</div>
+			</div>
+        </div>
+		<div class="pl-2 pr-2">
+		<p class="text-right serviceText m-0 mt-2 pr-2">Услуг</p>
+		<div class="service float-right ml-0 p-0 pt-3 pb-3">
+					
+
+							<div class="percent row p-0 m-0 align-items-center">
+								<div class="section1 section col-8 col-sm-8 col-md-8 mb-1 serviceText pt-1 pb-1">
+									Ручное бронирование
+								</div>
+								<div class="col-4 col-sm-4 col-md-4 text-right serviceText">
+									<strong>11</strong>
+								</div>
+								<div class="section2 section col-5 col-sm-5 col-md-5 mb-1 serviceText pt-1 pb-1">
+									Пакетные туры
+								</div>
+								<div class="col-7 col-sm-7 col-md-7 text-right serviceText">
+									<strong>3</strong>
+								</div>
+								<div class="section3 section col-3 col-sm-3 col-md-3 serviceText pt-1 pb-1">
+									Отели
+								</div>
+								<div class="col-9 col-sm-9 col-md-9 text-right serviceText">
+									<strong>1</strong>
+								</div>
+							</div>
+
+			
+        </div>
+        <div class="row m-0 total float-right serviceText p-0 pt-2">
+			<div class="col-9 col-sm-9 col-md-9 my-auto big">
+			<strong>Всего</strong>
+			</div>
+			<div class="col-3 col-sm-3 col-md-3 my-auto text-right big">
+				<strong>15</strong>
+			</div>
+		</div>
+        </div>
+        
+    <div class="row revList mx-auto">
+	<div class="col-12 col-sm-12 col-md-12">
+		<div class="row mt-4">
+			<div class="col-7 col-sm-7 col-md-8 col-lg-9 big" ><strong id="last">Последние отзывы</strong> <span class="serviceText pl-2 all"><span id="all">Все отзывы</span></span></div>
+			<div class="col-5 col-sm-5 col-md-4 col-lg-3 text-right serviceText"><i class="fas fa-heart dblue position-absolute fa-s"></i><i class="fas fa-heart blue position-relative z-index-2 fa-s" onclick="like();"></i> <span id="likes" class="pr-4"></span><i class="fas fa-comment-alt dblue  position-absolute fa-s"></i><i class="fas fa-comment-alt blue  position-relative z-index-2 fa-s"></i><span class="pl-1" id="comments"></span></div>
+		</div>
+        <div id="reviews" class="reviews"></div>
+		<div id="newReview"></div>		
+        
+		
+	</div>
+	</div>
+	
+	</div>
+	<div class="newPost w-100">
+			<form id="addReview" class="p-4 addReview mx-auto">
+				<input type ="text" name="user" id="user" placeholder="Имя" class="form-control serviceText borders w-25 mb-2" required />
+				<textarea id="text" name="text" id="text" rows="4" placeholder="Комментарий" class="form-control serviceText borders mb-2" required></textarea>
+				<div class="form-row text-center">
+				<div class="col-12">
+					<input id="sendReview" type="button" value="Написать консультанту" class="btn p-2 bold"/>
+				</div>
+				</div>
+			</form>
+    </div>
+	<script src="review.js"></script>
+    </body>
+</html>
+
